@@ -12,14 +12,20 @@ img.src = "./assets/shadow_dog.png";
 const spriteWidth = 575;
 const spriteHeight = 523;
 let gameFrame = 0;
-const staggerFrames = 5;
+let staggerFrames = 5;
 let state = "fall";
 
-const changer = document.querySelector("#animations");
-changer.addEventListener("change", function (event) {
+const changerAnimation = document.querySelector("#animations");
+changerAnimation.addEventListener("change", function (event) {
   state = event.target.value;
 });
 
+const animationSpeedValue = document.querySelector("#animationSpeedValue");
+const changerSpeedAnimation = document.querySelector("#animationSpeed");
+changerSpeedAnimation.addEventListener("change", function (event) {
+  staggerFrames = event.target.value;
+  animationSpeedValue.textContent = `Stagger Frames = ${event.target.value}`;
+});
 let animationStates = [
   {
     name: "idle",
