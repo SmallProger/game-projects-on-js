@@ -9,6 +9,9 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-color: black;
+  display: flex;
+  justify-content: center;
 }
 
 body canvas {
@@ -16,4 +19,9 @@ body canvas {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.instruction {
+  margin-top: 15px;
+  color: white;
+  font-size: 25px;
 }
