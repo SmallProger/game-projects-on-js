@@ -20,8 +20,11 @@ class Explosion {
     this.frame = 0;
     this.counter = 0;
     this.angle = Math.random() * 6.2;
+    this.audio = new Audio();
+    this.audio.src = "./assets/ice_attack_2.wav";
   }
   draw() {
+    this.audio.play();
     ctx.save();
     ctx.translate(this.x, this.y);
     ctx.rotate(this.angle);
