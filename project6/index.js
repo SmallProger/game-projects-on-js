@@ -101,6 +101,8 @@ class Explosion {
     this.image = new Image();
     this.image.src = "./assets/boom.png";
     this.markedForDelete = false;
+    this.audio = new Audio();
+    this.audio.src = "./assets/boom.wav";
   }
   draw() {
     ctx.drawImage(
@@ -114,6 +116,7 @@ class Explosion {
       this.size,
       this.size
     );
+    this.audio.play();
   }
   update(deltaTime) {
     if (this.timeSinceLastFrame > this.frameInterval) {
