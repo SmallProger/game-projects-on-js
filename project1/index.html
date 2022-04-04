@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Project1</title>
+  </head>
+  <body>
+    <canvas></canvas>
+    <div class="controlls">
+      <span id="animationSpeedValue">Stagger Frames = 5</span>
+      <input id="animationSpeed" type="range" min="1" max="20" />
+      <label for="animations">
+        <select id="animations" name="animations">
+          <option value="idle">idle</option>
+          <option value="jump">jump</option>
+          <option value="fall">fall</option>
+          <option value="run">run</option>
+          <option value="dizz">dizz</option>
+          <option value="sit">sit</option>
+          <option value="roll">roll</option>
+          <option value="bite">bite</option>
+          <option value="ko">ko</option>
+          <option value="getHit">getHit</option>
+        </select>
+      </label>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
